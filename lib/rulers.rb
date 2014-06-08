@@ -1,5 +1,6 @@
 require "rulers/version"
 require "rulers/array"
+require "rulers/routing"
 
 module Rulers
   class Application
@@ -7,7 +8,7 @@ module Rulers
       if env['PATH_INFO'] == '/favicon.ico'
         return [404, {'Content-Type' => 'text/html'}, []]
       end
-      
+
       klass, act = get_controller_and_action(env)
       controller = klass.new(env)
       text = controller.send(act)
