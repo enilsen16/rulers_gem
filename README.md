@@ -6,7 +6,7 @@ A rack based gem similar to Rails.
 
 Add this line to your application's Gemfile:
 
-    gem 'rulers', :git => 'git://github.com/enilsen16/rulers.git'
+    gem 'rulers', :git => 'git://github.com/enilsen16/rulers_gem.git'
 
 And then execute:
 
